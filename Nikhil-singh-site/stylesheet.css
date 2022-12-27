@@ -117,6 +117,10 @@ hr {
     filter: brightness(1.1);
 }
 
+.nikpng:hover {
+    filter: brightness(0.95);
+}
+
 .nikpng {
     border: 1px solid teal;
     height: 160px;
@@ -125,7 +129,6 @@ hr {
     position: absolute;
     transform: translateY(-205px);
     filter: brightness(1.1);
-    /* filter: drop-shadow(0 2px 5px black); */
 }
 
 .ball {

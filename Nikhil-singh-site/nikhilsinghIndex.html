@@ -1,313 +1,117 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif
-}
-
-
-
-a {
-    text-decoration: none;
-    color: rgb(42, 42, 42);
-}
-
-a:hover {
-
-    color: rgb(39, 187, 187);
-    transition: ease 0.2s;
-    text-decoration: underline;
-    transform: scale(2);
-}
-
-.nav1 {
-    flex: 1;
-}
-
-i {
-    width: 30px;
-    color: white;
-    align-items: left;
-}
-
-nav {
-    display: flex;
-    position: sticky;
-    top: -1px;
-    background-color: rgba(246, 246, 246, 0.819);
-    height: auto;
-    width: 100%;
-    backdrop-filter: blur(9px);
-    z-index: 3;
-    justify-content: center;
-}
-
-.sub-nav {
-    flex: center;
-    padding: 10px;
-    height: auto;
-    display: flex;
-    background-color: rgb(5, 111, 111);
-    align-items: center;
-    color: white;
-}
-
-.sublist {
-    width: auto;
-    margin-top: 1px;
-    display: none;
-    position: absolute;
-    border: none;
-    border-radius: 0px 0px 5px 5px;
-    background-color: rgb(239, 239, 239);
-    backdrop-filter: blur(6px);
-    transition: 1s ease;
-}
-
-.sublist li {
-    padding: 5px 10px;
-
-}
-
-.dropangle {
-    padding-left: 5px;
-}
-
-hr {
-    height: 0.5px;
-    background-color: #ccc;
-    border: none;
-}
-
-.offline {
-    position: relative;
-}
-
-.offline:hover .sublist {
-    display: block;
-}
-
-.div1container {
-    background-color: rgb(246, 246, 246);
-    display: flex;
-    padding: 80px;
-}
-
-.div1-txt {
-    padding: 24px;
-    background-color: rgb(227, 248, 254);
-    flex: 1;
-}
-
-
-.hero-text {
-    position: absolute;
-    top: 320px;
-    color: rgb(38, 38, 38);
-    margin-left: 80px;
-    font-size: 40px;
-    z-index: 1;
-}
-
-.image {
-    position: absolute;
-    z-index: 1;
-    position: relative;
-    height: 500px;
-    width: 100%;
-
-}
-
-.nikpng:hover {
-    filter: brightness(0.95);
-}
-
-.nikpng {
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    position: absolute;
-    transform: translateY(-218px);
-    filter: brightness(1.1);
-}
-
-.ball {
-    height: 5px;
-    width: 80px;
-    border: none;
-    border-radius: 10px;
-    background-color: teal;
-    animation-name: ball;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-@keyframes ball {
-    from {}
-
-    to {
-        transform: translateX(355px);
-    }
-
-}
-
-.btn {
-    height: 40px;
-    width: 150px;
-    background-color: rgb(38, 183, 166);
-    color: white;
-    font-size: 20px;
-    border: none;
-    border-radius: 3px;
-    margin-top: 30px;
-    cursor: pointer;
-    transition: 0.4s ease;
-}
-
-.btn:hover {
-    background-color: rgb(25, 132, 119);
-}
-
-.div1-img {
-    flex: 1;
-}
-
-.div1-txt h1 {
-    font-size: 48px;
-    padding-bottom: 15px;
-}
-
-
-h2 {
-    font-size: 76px;
-}
-
-
-
-.main {
-    height: 500px;
-    background-color: rgb(186, 240, 239);
-}
-
-.sec1 {
-    height: auto;
-    width: 100%;
-    background-color: rgb(230, 230, 230);
-}
-
-ul {
-    font-size: 24;
-    width: 60%;
-
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-li {
-    color: rgb(42, 42, 42);
-    vertical-align: middle;
-    word-spacing: 50px;
-    cursor: pointer;
-
-}
-
-.logo {
-    height: 40px;
-    width: 80px;
-    padding-top: 5px;
-    margin-right: 0px;
-}
-
-.sec2 {
-    background-color: white;
-
-}
-
-
-.box div {
-    background-color: white;
-    margin-top: 50px;
-    padding: 50px;
-    box-shadow: 0 4px 8px 0 gray;
-    transition: 0.4s ease;
-}
-
-.box div:hover {
-    transform: translatey(-15px);
-}
-
-.box h1 {
-    color: rgb(0, 138, 160);
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.box {
-    display: flex;
-    padding: 10px;
-    padding-top: 0;
-    margin: 20px;
-    gap: 20px;
-
-}
-
-.container2 {
-    padding: 20px;
-
-}
-
-
-
-.box2 {
-    padding: 0 10px;
-}
-
-.div2-1 {
-    margin-top: 100px;
-    background-color: rgb(239, 251, 255);
-    height: 300px;
-    width: 300px;
-    box-shadow: 0 4px 8px 0 gray;
-}
-
-.logo:hover {
-    filter: brightness(0.95);
-}
-
-.wtsp {
-    align-items: center;
-    display: flex;
-    position: relative;
-    height: 50px;
-    width: 150px;
-    background-color: rgb(43, 227, 26);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgb(128, 128, 128);
-    position: fixed;
-    bottom: 0px;
-    right: 10px;
-
-    color: white;
-    z-index: 5;
-}
-
-.wtsp:hover {
-    filter: brightness(0.8);
-}
-
-.wtsp-logo {
-    height: 40px;
-    width: 40px;
-}
-
-
-.div1-head {
-    text-align: center;
-    padding-top: 20px;
-    color: rgb(51, 178, 178);
-    font-size: 22px;
-    text-decoration: underline;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Nikhil Singh</title>
+    <link rel="stylesheet" href="new-logo.png" rel="icon">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="sub-nav">
+        <div class="nav1">
+            <i class="fa-sharp fa-solid fa-phone"> </i>+919924768290
+            <i class="fa-sharp fa-solid fa-envelope"></i>nikhilsingh@outlook.com
+        </div>
+        <div class="nav2">
+        </div>
+        <div class="nav3">
+            <a href="www.facebook.com"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="www.instagram.com"> <i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </div>
+    <nav>
+        <ul class="navitems">
+            <li><img class="logo" src="new-logo.png" alt=""></li>
+            <li><a href="">Courses</a> </li>
+            <li><a href="">Online</a> </li>
+            <li class="offline"><a href="">Offline</a><span class="fa-solid fa-angle-down dropangle"></span>
+                <ul class="sublist">
+                    <li><a href="#">Ahmedabad</a> </li>
+                    <hr>
+                    <li><a href="#">Delhi</a> </li>
+                    <hr>
+                    <li><a href="#">Mumbai</a> </li>
+                    <hr>
+                    <li><a href="#">Banglore</a> </li>
+                    <hr>
+                    <li><a href="#">Kolkata</a> </li>
+                </ul>
+            </li>
+            <li><a href="">Resources</a> </li>
+            <li><a href="">Youtube</a> </li>
+            <li><a href="">About-us</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-img">
+        <img class="image" src="newheroimg.png" alt="">
+        <div class="hero-text">
+
+            <a href="#"><img src="nikpng.png" class="nikpng" alt=""></a>
+
+
+            <h2>Learn trading from the bests.</h2>
+            <h3 style="color:rgb(37, 37, 37)">Book your seat now <br>
+                <div class="ball"></div>
+                <span><button class="btn">Book
+                        now</button></span>
+
+            </h3>
+
+        </div>
+    </div>
+    <section class="sec1">
+        <div class="div1container">
+
+            <div class="div1-txt">
+                <h1>What We Do?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sed in exercitationem cum?
+                    Doloremque, sequi sint? Consequuntur iusto ab esse, voluptatibus distinctio illum! Numquam dolor est
+                    at nemo tempore laborum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti molestias iusto ipsum veritatis ex
+                    commodi magni perspiciatis inventore unde ducimus? Ea quod temporibus ratione modi obcaecati
+                    asperiores, tenetur est expedita?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur, quis veritatis dolorum
+                    voluptatum minus recusandae ipsam sapiente distinctio quaerat, voluptates fugiat corporis quia
+                    ducimus reprehenderit odio possimus. Cupiditate, consequuntur.</p>
+            </div>
+            <div class="div2-img">
+                <img height="360px" width="350px" src="Screenshot 2022-12-21 114729.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="container2">
+            <div class="box">
+                <div class="box1">
+                    <h1>This</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officiis, sed laborum
+                    recusandae ipsam inventore nulla asperiores itaque quos ea delectus, quia unde ut ducimus! Sapiente
+                    repellendus assumenda debitis fugiat?
+                </div>
+                <div class="box2">
+                    <h1>This</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi recusandae
+                    dolore nemo ipsum beatae officia distinctio laborum accusamus cupiditate, sed, harum et blanditiis
+                    eaque id quos cum earum voluptate?
+                </div>
+                <div class="box2">
+                    <h1>This</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi recusandae
+                    dolore nemo ipsum beatae officia distinctio laborum accusamus cupiditate, sed, harum et blanditiis
+                    eaque id quos cum earum voluptate?
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="wtsp">
+        <div>
+            <img class="wtsp-logo" src="wtsp.png" alt="">
+        </div>
+        <div class="wtsp-no"><strong>9924768290</strong> </div>
+    </div>
+</body>
+
+</html>

@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -132,7 +133,7 @@ hr {
 
 .ball {
     height: 5px;
-    width: 80px;
+    width: 25px;
     border: none;
     border-radius: 10px;
     background-color: teal;
@@ -146,7 +147,7 @@ hr {
     from {}
 
     to {
-        transform: translateX(355px);
+        transform: translateX(345px);
     }
 
 }
@@ -176,13 +177,6 @@ hr {
     font-size: 48px;
     padding-bottom: 15px;
 }
-
-
-h2 {
-    font-size: 76px;
-}
-
-
 
 .main {
     height: 500px;
@@ -215,7 +209,7 @@ li {
 
 .logo {
     height: 40px;
-    width: 80px;
+    width: 70px;
     padding-top: 5px;
     margin-right: 0px;
 }
@@ -226,16 +220,69 @@ li {
 }
 
 
-.box div {
+.box .box1,
+.box2,
+.box3 {
+    position: relative;
+    height: 300px;
     background-color: white;
     margin-top: 50px;
     padding: 50px;
-    box-shadow: 0 4px 8px 0 gray;
+    border: 2px solid rgb(29, 189, 189);
     transition: 0.4s ease;
+    overflow: hidden;
+}
+
+.overlay-text {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    position: absolute;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* top: 0; */
+    background-color: rgba(0, 0, 0, 0.733);
+    transition: 0.6s ease all;
+}
+
+.overlay-text h2 {
+    padding-top: 90px;
+}
+
+
+.box2:hover .overlay-text {
+    height: 100%;
+}
+
+
+
+h2 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 40px;
+    animation-name: booknow;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes booknow {
+    from {}
+
+    to {
+        color: rgb(187, 17, 17);
+    }
 }
 
 .box div:hover {
-    transform: translatey(-15px);
+    box-shadow: 0 4px 8px 0 gray;
 }
 
 .box h1 {
@@ -260,9 +307,9 @@ li {
 
 
 
-.box2 {
+/* .box2 {
     padding: 0 10px;
-}
+} */
 
 .div2-1 {
     margin-top: 100px;
@@ -310,4 +357,17 @@ li {
     color: rgb(51, 178, 178);
     font-size: 22px;
     text-decoration: underline;
+}
+
+.footer {
+    height: 300px;
+    width: 100%;
+    background-color: rgb(0, 46, 46);
+}
+
+@media (max-width: 576px) {
+    .div1container {
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -1,0 +1,56 @@
+@media (max-width: 576px) {
+    .div1container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-nav {
+        display: none;
+    }
+
+    .navitems {
+        display: none;
+    }
+
+    .image {
+        height: 400px;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 200px;
+        color: rgb(38, 38, 38);
+        margin-left: 0;
+        font-size: 22px;
+        z-index: 1;
+    }
+
+    h2 {
+        padding-top: 10px;
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .btn {
+        height: 30px;
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .nikpng {
+        height: 100px;
+        width: 100px;
+        transform: translateY(-136px);
+
+    }
+}

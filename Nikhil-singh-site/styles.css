@@ -276,7 +276,7 @@ h2 {
     font-size: 64px;
 }
 
-h3 {
+.hero-sub-head {
     font-size: 40px;
     animation-name: booknow;
     animation-duration: 0.4s;
@@ -316,7 +316,11 @@ h3 {
     padding: 50px;
 }
 
-
+.container-2 .box .price {
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.608);
+}
 
 .box2 {
     align-items: center;
@@ -429,7 +433,7 @@ h3 {
 
 /* -------------section-counters---------- */
 .section-2-counters {
-    background-color: rgb(222 239 237);
+    background-color: rgb(255, 255, 255);
 }
 
 .container-2 {
@@ -458,6 +462,7 @@ h3 {
     justify-items: center;
     width: 300px;
     text-align: center;
+    box-shadow: 0 0.5px 6px rgb(128, 128, 128);
     border-radius: 7px;
 }
 

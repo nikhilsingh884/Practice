@@ -1,0 +1,80 @@
+@media (max-width:768px) {
+
+    .hero-section .navbar-flex .searchbar {
+        display: block;
+    }
+
+    /* --------------------------------Hero section--------------------- */
+    .hero-section {
+        background-color: black;
+    }
+
+    .container-m {
+        margin: 0 50px;
+    }
+
+    .container-p {
+        padding: 35px 0;
+    }
+
+    .hero-section .hamburger {
+        display: none;
+    }
+
+    .hero-section .hamburger span {
+        font-size: 22px;
+    }
+
+    .hero-section .outer-hero {
+        text-align: center;
+        padding-top: 20px;
+        justify-content: center;
+    }
+
+
+    .hero-section .outer-hero .content-hero h1 {
+        font-size: 44px;
+    }
+
+
+    .hero-section .outer-hero .hero-img {
+        display: none;
+    }
+
+    .hero-section .outer-hero .content-hero .header-hero {
+        text-align: center;
+
+    }
+
+    .hero-section .outer-hero .content-hero .header-hero h2 {
+        text-align: center;
+    }
+
+    .hero-section .outer-hero .content-hero .text-hero {
+        padding: 30px 0;
+        line-height: 30px;
+    }
+
+    .hero-section .outer-hero .content-hero .text-hero span {
+        color: rgb(255, 255, 92);
+        padding-right: 30px;
+        width: 10px;
+    }
+
+    .hero-section .outer-hero .content-hero .text-hero h3 {
+        text-align: left;
+    }
+
+    .hero-section .outer-hero .content-hero .text-hero h3 div {
+        padding: 5px;
+        background-color: white;
+    }
+
+    .hero-section .browse-btn-div {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+
+
+}

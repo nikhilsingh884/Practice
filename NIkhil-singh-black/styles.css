@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------navbar------------------------------------ */
+.hero-section .navbar-flex .logo {
+    flex: 2;
+    text-align: left;
+}
+
+.hero-section .hamburger {
+    text-align: center;
+    align-items: center;
+    display: none;
+}
+
+.hero-section .hamburger span {
+    color: white;
+}
+
+.hero-section .navbar-flex .searchbar input {
+    height: 40px;
+    width: 240px;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(165, 165, 165);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    transition: 0.4s ease;
+    padding: 5px 20px;
+
+}
+
+.hero-section .navbar-flex .searchbar ::placeholder {
+    text-align: center;
+    color: rgb(215, 215, 215);
+}
+
+.hero-section .navbar-flex .searchbar input:hover {
+    border-color: white;
+}
+
+.hero-section .navbar-flex {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* --------------------------------Hero section--------------------- */
+.hero-section {
+    background-color: black;
+    position: relative;
+}
+
+.container-m {
+    margin: 0 100px;
+}
+
+.container-p {
+    padding: 50px 0;
+}
+
+.container-hero {
+    padding: 50px 0 0 0;
+}
+
+.hero-section .outer-hero {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    /* transform: scale(0.9); */
+}
+
+.hero-section .outer-hero .content-hero h1 {
+    color: white;
+    font-size: 56px;
+    line-height: 50px;
+    padding-bottom: 15px;
+    transition: 0.8s ease;
+}
+
+.hero-section .outer-hero .content-hero h1:hover {
+    color: yellow;
+
+
+}
+
+.hero-section .outer-hero .hero-img img {
+    height: 300px;
+    width: auto;
+
+
+}
+
+.hero-section .outer-hero .hero-img {
+    overflow: hidden;
+    border: 16px solid white;
+    border-radius: 60%;
+    transform: scale(0.8);
+    transition: 0.7s ease;
+
+
+}
+
+.hero-section .outer-hero .hero-img:hover {
+    transform: scale(1.05);
+    border-color: cyan;
+
+}
+
+.hero-section .outer-hero .content-hero {
+    padding: 15px 0;
+}
+
+.hero-section .outer-hero .content-hero .header-hero {
+    width: 50%;
+    text-align: centerF;
+}
+
+.hero-section .outer-hero .content-hero .header-hero h2 {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    background-color: white;
+    width: auto;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: black;
+    transition: 0.8s ease;
+}
+
+
+.hero-section .outer-hero .content-hero .text-hero {
+    padding: 30px 0;
+    line-height: 30px;
+}
+
+.hero-section .outer-hero .content-hero .text-hero span {
+    color: rgb(255, 255, 92);
+    padding-right: 30px;
+    width: 10px;
+}
+
+.hero-section .outer-hero .content-hero .text-hero h3 {
+    color: rgb(221, 221, 221);
+    font-weight: normal;
+    font-size: medium;
+}
+
+.hero-section .outer-hero .content-hero .text-hero h3 div {
+    padding: 5px;
+    background-color: white;
+}
+
+.hero-section .browse-btn-div {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.hero-section .browse-btn-div button {
+    height: 40px;
+    width: 170px;
+    border: 3px solid white;
+    background: none;
+    border-radius: 20px;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.hero-section .browse-btn-div button:hover {
+    color: black;
+    background-color: white;
+
+}
+
+.hero-section .curve {
+    content: "";
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%/50%;
+    z-index: -1;
+    transform: translate(-90px, -280px);
+
+}
+
+/* -------------what are we section------------ */
+.what-we-are .we-outer {
+    display: flex;
+    padding-top: 45px;
+
+}
+
+.what-we-are .we-outer .left-content {
+    color: rgb(164, 164, 164);
+    flex: 1;
+    padding: 50px 80px;
+    background-color: rgb(0, 0, 0);
+}
+
+.what-we-are .we-outer .left-content h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(227, 227, 227);
+}
+
+
+
+.what-we-are .we-outer .left-content ul {
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+.what-we-are .we-outer .left-content li {
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.what-we-are .we-outer .right-img {
+    background-image: url(what-are-we.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+}
+
+.what-we-are .we-header {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 38px;
+    color: #000000;
+
+}
+
+/* -------------courses section------------ */
+
+
+
+.courses .title {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 38px;
+    color: #1e1e1e;
+}
+
+.courses .courses-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20px;
+    gap: 40px;
+}
+
+.courses .courses-outer .course-box {
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.837);
+    backdrop-filter: blur(2px);
+}
+
+.courses .courses-outer .course-box .course-box-head-flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.courses .courses-outer .course-box .row-1-head {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 15px 0px;
+}
+
+.courses .courses-outer .course-box .course-box-head-flex span {
+    font-size: 20px;
+
+}
+
+.courses .courses-outer .course-box .course-box-head-flex h3 {
+    font-weight: 300;
+}
+
+
+.courses .courses-outer .course-box .row-2-box-text ul {
+    padding: 20px 50px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.courses .courses-outer .course-box .row-3-flex {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid;
+    text-align: center;
+}
+
+.courses .courses-outer .course-box .row-3-flex .price {
+    flex: 2;
+    padding: 10px;
+    border-right: 1px solid gray;
+
+}
+
+.courses .courses-outer .course-box .row-3-flex .buy {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s ease;
+
+
+}
+
+.courses .courses-outer .course-box .row-3-flex .buy:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.courses .callback-btn {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.courses .callback-btn button {
+    font-size: 18px;
+    height: 40px;
+    width: 250px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    transition: 0.4s ease;
+    background-color: white;
+
+}
+
+.courses .callback-btn button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+
+}
+
+.courses .curve {}

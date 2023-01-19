@@ -243,7 +243,7 @@
 
 /* -------------courses section------------ */
 
-
+.courses {}
 
 .courses .title {
     text-align: center;
@@ -264,7 +264,7 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.837);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
 }
 
 .courses .courses-outer .course-box .course-box-head-flex {
@@ -302,6 +302,7 @@
     justify-content: center;
     border-top: 1px solid;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .courses .courses-outer .course-box .row-3-flex .price {
@@ -316,7 +317,7 @@
     padding: 10px;
     text-align: center;
     transition: 0.3s ease;
-
+    background-color: rgb(241, 241, 241);
 
 }
 
@@ -334,7 +335,7 @@
     font-size: 18px;
     height: 40px;
     width: 250px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 20px;
     color: rgb(0, 0, 0);
     transition: 0.4s ease;
@@ -348,4 +349,80 @@
 
 }
 
-.courses .curve {}
+/* ========== features section============ */
+
+.features {}
+
+.features .photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.features .photos img {
+    height: 210px;
+    width: 340px;
+}
+
+.features .photos h1 {
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.features .photos p {
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 5px 20px;
+}
+
+/* ----------how-to-apply---------- */
+.how-to-apply .apply-outer {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-to-apply .apply-outer .apply-left {
+    flex: 1;
+    padding: 30px;
+}
+
+.how-to-apply .apply-outer .apply-left h3 {
+    font-weight: 500;
+}
+
+.how-to-apply .apply-outer .apply-left h1 {
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: red;
+}
+
+.how-to-apply .apply-outer .apply-left .step-1-flex {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-to-apply .apply-outer .apply-left .step-1-flex span {
+    padding-right: 20px;
+    font-size: 60px;
+    color: rgb(183, 50, 50);
+}
+
+.how-to-apply .apply-outer .apply-left .step-1-flex h2 {
+    font-weight: 500;
+}
+
+.how-to-apply .apply-outer .apply-right {
+    flex: 1;
+}
+
+.how-to-apply .apply-outer .apply-right img {
+    max-height: auto;
+    width: 100%;
+}

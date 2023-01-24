@@ -6,6 +6,10 @@
 }
 
 /* ------------------------------------navbar------------------------------------ */
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -56,6 +60,65 @@ a {
     align-items: center;
 }
 
+/* -----------------social-bar------------------------ */
+ul {
+    list-style-type: none;
+}
+
+.side-social-bar {
+    position: fixed;
+    top: 30%;
+    z-index: 999;
+}
+
+.side-social-bar a {
+    color: rgb(255, 255, 255);
+}
+
+.side-social-bar li {
+    background-color: rgba(207, 207, 207, 0.669);
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    backdrop-filter: blur(5px);
+    text-align: right;
+    border-radius: 30px;
+    transform: translateX(-250px);
+    transition: 0.5s ease;
+}
+
+.side-social-bar li:hover {
+    transform: translateX(-150px);
+}
+
+.side-social-bar .facebook:hover {
+    color: white;
+    background-color: rgb(63, 104, 216);
+}
+
+.side-social-bar .whatsapp:hover {
+    color: white;
+    background-color: rgb(61, 202, 104);
+}
+
+.side-social-bar .youtube:hover {
+    color: white;
+    background-color: rgb(237, 52, 52);
+}
+
+.side-social-bar .instagram:hover {
+    color: white;
+    background-color: rgb(181, 24, 147);
+}
+
+.side-social-bar span {
+    font-size: 18px;
+    padding: 3px 3px 3px 18px;
+    margin-right: 5px;
+    align-items: center;
+}
 
 /* --------------------------------Hero section--------------------- */
 .hero-section {
@@ -78,19 +141,20 @@ a {
 .hero-section .outer-hero {
     position: relative;
     display: flex;
-    gap: 50px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     transform: scale(0.9);
+
 }
 
 .hero-section .outer-hero .bubble {
     /* position: absolute; */
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 30px;
     border: 1px solid white;
     border-radius: 50%;
-    transform: translate(-45px, 120px);
+    transform: translate(0px, 120px);
     animation-name: bubble;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -105,14 +169,6 @@ a {
     }
 
 } */
-
-.hero-section .outer-hero .content-hero h1 {
-    color: yellow;
-    font-size: 56px;
-    line-height: 50px;
-    padding-bottom: 15px;
-    transition: 0.8s ease;
-}
 
 
 
@@ -144,8 +200,18 @@ a {
 
 .hero-section .outer-hero .content-hero .header-hero {
     width: 65%;
-
 }
+
+.hero-section .outer-hero .content-hero h1 {
+    color: yellow;
+    font-size: 80px;
+    line-height: 50px;
+    padding-bottom: 15px;
+    transition: 0.8s ease;
+    line-height: 75px
+}
+
+
 
 .hero-section .outer-hero .content-hero .header-hero h2 {
     color: rgb(255, 255, 255);
@@ -158,6 +224,10 @@ a {
     transition: 0.8s ease;
 }
 
+.hero-section .outer-hero .content-hero .header-hero span {
+    font-weight: 100;
+    letter-spacing: 8px;
+}
 
 .hero-section .outer-hero .content-hero .text-hero {
     padding: 30px 0;
@@ -172,8 +242,9 @@ a {
 
 .hero-section .outer-hero .content-hero .text-hero h3 {
     color: rgb(221, 221, 221);
-    font-weight: normal;
+    font-weight: 100;
     font-size: medium;
+
 }
 
 .hero-section .outer-hero .content-hero .text-hero h3 div {
@@ -206,12 +277,12 @@ a {
     height: 50%;
     width: 100%;
     position: absolute;
+    bottom: -65px;
+    left: 0px;
     background: linear-gradient(to right, #000000, #000000);
-
     border-radius: 50%/50%;
     z-index: -1;
-    transform: translate(-90px, -290px);
-
+    /* transform: translate(-90px, -290px); */
 }
 
 /* -------------Unveal section------------ */
@@ -228,17 +299,51 @@ a {
     background-color: rgb(0, 0, 0);
 }
 
+.what-we-are .we-outer .left-content .ul-btn-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.what-we-are .we-outer .left-content .ul-btn-flex div {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.what-we-are .we-outer .left-content .ul-btn-flex button {
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    border: 2px solid white;
+    background: none;
+    border-radius: 40px;
+    color: white;
+    /* transition: 0.2s ease; */
+    text-align: center;
+
+
+}
+
+.what-we-are .we-outer .left-content .ul-btn-flex button:hover {
+    border: 3px solid white;
+}
+
 .what-we-are .we-outer .left-content h2 {
     font-size: 40px;
     font-weight: 500;
     color: rgb(227, 227, 227);
+    padding-bottom: 20px;
+    padding-left: 10px;
 }
 
 
 
 .what-we-are .we-outer .left-content ul {
+    position: relative;
     list-style-type: none;
-    padding-top: 30px;
+    padding: 30px 30px 30px 0;
 }
 
 .what-we-are .we-outer .left-content li {
@@ -247,7 +352,7 @@ a {
 }
 
 .what-we-are .we-outer .right-img {
-    background-image: url(what-are-we.jpg);
+    background-image: url(gallery-1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -284,12 +389,10 @@ a {
 
 .courses .courses-outer .course-box {
     border: 1px solid gray;
-    border-radius: 10px;
+    border-radius: 2px;
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.837);
     backdrop-filter: blur(10px);
-    box-shadow: 0 1px 8px 1px gray;
-
 }
 
 .courses .courses-outer .course-box .course-box-head-flex {
@@ -364,7 +467,7 @@ a {
     font-size: 18px;
     height: 40px;
     width: 250px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
     color: rgb(0, 0, 0);
     transition: 0.4s ease;
@@ -380,7 +483,10 @@ a {
 
 /* ========== features section============ */
 
-.features {}
+.features {
+    background-color: rgb(246, 246, 246);
+
+}
 
 .features .photos {
     display: grid;
@@ -408,7 +514,7 @@ a {
 
 /* ----------how-to-apply---------- */
 .how-to-apply {
-    background-color: rgb(255, 233, 233);
+    background-color: rgb(255, 255, 255);
 }
 
 .how-to-apply .apply-outer {
@@ -444,7 +550,7 @@ a {
 .how-to-apply .apply-outer .apply-left .step-1-flex span {
     padding-right: 20px;
     font-size: 60px;
-    color: rgb(183, 50, 50);
+    color: rgb(31, 31, 31);
 }
 
 .how-to-apply .apply-outer .apply-left .step-1-flex h2 {

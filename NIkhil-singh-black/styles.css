@@ -199,6 +199,7 @@ ul {
 }
 
 .hero-section .outer-hero .content-hero {
+    text-align: left;
     transform: translateX(650px);
     padding: 15px 0;
     animation: name duration timing-function delay iteration-count direction fill-mode;
@@ -220,7 +221,8 @@ ul {
 }
 
 .hero-section .outer-hero .content-hero .header-hero {
-    width: 65%;
+    /* width: 65%; */
+    text-align: center;
 }
 
 .hero-section .outer-hero .content-hero h1 {
@@ -237,12 +239,10 @@ ul {
 .hero-section .outer-hero .content-hero .header-hero h2 {
     color: rgb(255, 255, 255);
     font-weight: normal;
-    width: auto;
     text-align: center;
     border-radius: 20px;
     border: 2px solid white;
     background-color: black;
-    transition: 0.8s ease;
 }
 
 .hero-section .outer-hero .content-hero .header-hero span {
@@ -511,7 +511,6 @@ ul {
 
 .features {
     background-color: rgb(246, 246, 246);
-    width: 100%;
 }
 
 .features .photos {
@@ -520,12 +519,10 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 .features .photos div {
-    height: auto;
-    width: auto;
+    overflow: hidden;
 }
 
 .features .photos img {

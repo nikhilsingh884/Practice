@@ -91,8 +91,8 @@
         display: none;
     }
 
-    .hero-section .curve {
-        display: none;
+     .hero-section .curve {
+        transform: scale(1.5) translateY(-50px);
     }
 
     .what-we-are .we-outer {

@@ -1,0 +1,141 @@
+@media (max-width:768px) {
+    .side-social-bar {
+        display: none;
+    }
+
+    .navbar-flex .logo {
+        transform: scale(0.9);
+    }
+
+    .hero-section .head-icon {
+        display: block;
+    }
+
+    .navbar-flex .hamburger-search-flex {
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .navbar-flex .hamburger-search-flex .head-icon span {
+        font-size: 22px;
+    }
+
+    .navbar-flex .searchbar input {
+        display: none;
+
+    }
+
+    .navbar-flex {
+        gap: 30px;
+        justify-content: space-evenly;
+
+    }
+
+    .navbar-flex .logo {
+        flex: 6;
+    }
+
+    .navbar-flex .menu ul {
+        display: none;
+    }
+
+    .hamburger-search-flex {
+        display: flex;
+    }
+
+    .container-m {
+        margin: 0 35px;
+    }
+
+    .container-p {
+        padding: 25px 0;
+    }
+
+    .hero-section .outer-hero {
+        display: block;
+    }
+
+    .hero-section .outer-hero .content-hero {
+        text-align: center;
+    }
+
+    .hero-section .outer-hero .content-hero h1 {
+        font-size: 64px;
+        text-align: center;
+        line-height: 55px;
+    }
+
+
+
+
+    .hero-section .outer-hero .content-hero .text-hero h3 {
+        font-size: 14px;
+    }
+
+    .hero-section .outer-hero .content-hero .header-hero {
+        width: 100%;
+        transform: scale(0.8);
+        text-align: center;
+    }
+
+    .hero-section .outer-hero .hero-img {
+        display: none;
+    }
+
+    .hero-section .browse-btn-div {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .hero-section .outer-hero .bubble {
+        display: none;
+    }
+
+    .hero-section .curve {
+        display: none;
+    }
+
+    .what-we-are .we-outer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .what-we-are .we-outer .left-content {
+        padding: 50px 30px;
+
+    }
+
+    .what-we-are .we-outer .left-content h2 {
+        font-size: 30px;
+    }
+
+    .what-we-are .we-outer .left-content .ul-btn-flex div {
+        display: none;
+    }
+
+    /* ----------------courses--------- */
+    .courses .courses-outer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features .photos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .how-to-apply .apply-outer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* -----------------how-to-apply---------------- */
+
+    .how-to-apply .apply-outer .apply-left {
+        padding: 0;
+    }
+
+    .step-1-flex span {
+        font-size: 45px;
+    }
+}

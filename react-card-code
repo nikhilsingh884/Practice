@@ -1,0 +1,69 @@
+<h1>Nikhil's react</h1>
+    <div className="row">
+      <div className='card'>
+        <img src={nik} className="nikImg" alt="" />
+        <div className='card-body'>
+          <p>gjmgyhk hgkt k gkggj fkgj bjwqhurgb hvfs bulwvd bog vfes lebhl wglsd sdrt4e</p>
+        </div>
+        <div className='card-footer d-flex justify-content-center'>
+          <button className='btn btn-primary'>Add to cart</button>
+        </div>
+      </div>
+
+      <div className='card'>
+        <img src={nik1} className="nikImg" alt="" />
+        <div className='card-body'>
+          <p>gjmgyhk hgkt k gkggj fkgj bjwqhurgb hvfs bulwvd bog vfes lebhl wglsd sdrt4e</p>
+        </div>
+        <div className='card-footer d-flex justify-content-center'>
+          <button className='btn btn-primary'>Add to cart</button>
+        </div>
+      </div>
+
+      <div className='card'>
+        <img src={nik2} className="nikImg" alt="" />
+        <div className='card-body'>
+          <p>gjmgyhk hgkt k gkggj fkgj bjwqhurgb hvfs bulwvd bog vfes lebhl wglsd sdrt4e</p>
+        </div>
+        <div className='card-footer d-flex justify-content-center'>
+          <button className='btn btn-primary'>Add to cart</button>
+        </div>
+      </div>
+
+      <div className='card'>
+        <img src={nik3} className="nikImg" alt="" />
+        <div className='card-body'>
+          <p>gjmgyhk hgkt k gkggj fkgj bjwqhurgb hvfs bulwvd bog vfes lebhl wglsd sdrt4e</p>
+        </div>
+        <div className='card-footer d-flex justify-content-center'>
+          <button className='btn btn-primary'>Add to cart</button>
+        </div>
+      </div>
+
+      {/* --------------using card------------------------ */}
+
+      <div className="card">
+        <img className="card-img-top" src={nik1} alt="Card image cap" />
+        <div className="card-body">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="google.com" className="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+
+      {/* ---------------manual--------------------- */}
+      <div>
+        <h2>Hello World</h2>
+        <img src={nik2} height="250px" />
+        <p>This is the description part.</p>
+        <button>Add to cart</button>
+      </div>
+    </div>
+    <div>
+
+    </div>
+    {/* -------------components----------------- */}
+
+    <Cards title="Nikhil" description="This is nikhil's description" image={nik2} />
+    <Cards title="DArshit" description="This is tahid's description" image={nik3} />
+    <Cards title="Tahid" description="This is darshit's description" image={nik1} />

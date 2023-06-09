@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+
     <style>
         * {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -21,16 +24,18 @@
         }
 
         .calculator {
+            /* border: 1px solid black; */
             padding: 20px 25px;
-            background-color: rgb(253, 253, 253);
-            border-radius: 10px;
-            box-shadow: 0 0 50px 25px rgb(196, 196, 196);
+            background-color: rgb(57, 57, 57);
+            border-radius: 20px;
+            box-shadow: inset 10px 0 4px rgb(135, 135, 135), inset -10px 4px 4px rgb(135, 135, 135);
         }
+
 
         .calculator h2 {
             padding-right: 5px;
             text-align: right;
-            color: rgb(63, 63, 63);
+            color: rgb(235, 235, 235);
             font-weight: 300;
         }
 
@@ -46,24 +51,27 @@
             color: rgb(42, 42, 42);
             font-weight: 500;
             border-radius: 5px;
-            background-color: rgb(230, 230, 230);
+            background-color: rgb(126, 155, 126);
+            box-shadow: inset -2px -2px 4px 1px rgb(0, 0, 0);
             cursor: pointer;
+            font-size: 16px;
 
         }
 
+        .row-1 {
+            text-align: center;
+        }
 
         .row-1 input {
             height: 40px;
             width: 40px;
             margin: 5px;
             border: none;
-            /* box-shadow: 0 0 10px 1px cyan; */
-
             outline: none;
             border-radius: 5px;
             color: white;
-            background-color: rgb(69, 69, 69);
-            box-shadow: -2px -2px 5px rgb(0, 0, 0), 2px 2px 10px rgb(255, 255, 255);
+            background-color: rgb(88, 88, 88);
+            box-shadow: -2px -2px 3px rgb(0, 0, 0), 2px 2px 5px rgb(44, 44, 44);
             text-align: center;
             transition: 0.1s ease;
         }
@@ -80,6 +88,7 @@
 
         .special-char {
             color: cyan !important;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -87,24 +96,24 @@
 <body>
     <div class="container">
         <div class="calculator">
-            <h2><span style="font-size: 14px;">Nikhil's</span> Citizen</h2>
+            <h2><span style="font-size: 14px; color: rgb(215, 215, 215);">Nikhil's</span> Citizen</h2>
             <form action="">
                 <div class="row-display">
-                    <input type="text" name="display">
+                    <input id="display" type="text" name="display">
                 </div>
                 <div class="row-1">
                     <input type="button" class="special-char" value="AC" onclick="display.value =''"></input>
                     <input type="button" class="special-char" value="DE"
                         onclick="display.value=display.value.toString().slice(0,-1)"></input>
                     <input type="button" class="special-char" value="." onclick="display.value+='.'"></input>
-                    <input type="button" class="special-char" value="/" onclick="display.value+='/'"></input>
+                    <input type="button" class="special-char" value="÷" onclick="display.value+='/'"></input>
                 </div>
 
                 <div class="row-1">
                     <input type="button" value="7" onclick="display.value+='7'"></input>
                     <input type="button" value="8" onclick="display.value+='8'"></input>
                     <input type="button" value="9" onclick="display.value+='9'"></input>
-                    <input type="button" class="special-char" value="*" onclick="display.value+='*'"></input>
+                    <input type="button" class="special-char" value="x" onclick="display.value+='*'"></input>
                 </div>
 
                 <div class="row-1">
@@ -118,7 +127,8 @@
                     <input type="button" value="1" onclick="display.value+='1'"></input>
                     <input type="button" value="2" onclick="display.value+='2'"></input>
                     <input type="button" value="3" onclick="display.value+='3'"></input>
-                    <input type="button" class="special-char" value="+" onclick="display.value+='+'"></input>
+                    <input type="button" class="special-char" onchange="pressOperator()" value="+"
+                        onclick="display.value+='+'"></input>
                 </div>
 
                 <div class="row-1">
@@ -130,6 +140,18 @@
             </form>
         </div>
     </div>
+    <script>
+        function pressOperator() {
+
+            let display = document.getElementById("display");
+
+            if (display.includes("+", "-", "×", "÷")) {
+                display.value = display.value.slice(0, -1);
+            } else {
+                display.value += e.innerHTML;
+            }
+        }
+    </script>
 </body>
 
 </html>

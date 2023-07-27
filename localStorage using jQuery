@@ -21,11 +21,14 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+                                    <!-- jQuery-cookie-plugin -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 </head>
 
 <body>
     <div class="container py-4">
-        <div class="col-md-6 offset-3 p-5 rounded-3 bg-light">
+        <div class="col-md-6 offset-3 p-5 rounded-3 bg-light shadow">
             <form action="" id="form">
                 <h2>Register</h2>
                 <hr>
@@ -41,6 +44,35 @@
 
                 <button class="btn btn-sm btn-primary w-100" id="submit" type="submit">Sumbit</button>
             </form>
+
+        </div>
+        <h3 class=" mt-5">Registered users</h3>
+        <div class="table shadow ">
+            <table class="table table-striped mt-4" id="userTable">
+                <thead>
+                    <tr class="table-dark">
+                        <th>Sr. No.</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody class="">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="mt-5">
+
+            <h3>Cookie Storage example</h3>
+
+            <div class="cookieStorage ">
+                <input type="text" id="nameInput" placeholder="Enter your name">
+                <button class="btn btn-sm btn-primary" id="saveButton">Add to cookie storage and alert</button>
+            </div>
+
         </div>
     </div>
 
@@ -50,7 +82,7 @@
 
         $(document).ready(function () {
             $("#form").submit(function (event) {
-                event.preventDefault(); 
+                event.preventDefault();
 
                 var name = $('#name').val();
                 var email = $('#email').val();
@@ -72,11 +104,41 @@
 
                 alert("Submitted successfully!");
 
-                $("#myForm")[0].reset();
+                $("#form")[0].reset();
             });
         });
 
-        // ========hideShow PW=========
+
+
+        // ====================data-in-table==============
+
+
+        function dataInTable() {
+
+            var existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+            var tableBody = $("#userTable tbody");
+
+            existingUsers.forEach(function (user, index) {
+
+                var srNo = index + 1
+
+                var row = "<tr>" +
+                    "<td>" + srNo + "</td>" +
+                    "<td>" + user.name + "</td>" +
+                    "<td>" + user.email + "</td>" +
+                    "<td>" + user.mobile + "</td>" +
+                    "<td>" + user.password + "</td>" +
+                    "</tr>";
+
+                tableBody.append(row);
+
+            });
+        }
+
+        dataInTable();
+
+
+        // =======================hideShow PW====================
 
 
         $('#hideShowPW').on("click", function () {
@@ -89,6 +151,18 @@
                 $("#password").attr('type', 'password')
             }
         })
+
+
+        // ==========================cookieStorage===============
+
+
+        $("#saveButton").click(function () {
+
+            var username = $("#nameInput").val();
+
+            $.cookie('name', username, { expires: 7 });
+            alert("Your name saved in the cookie!");
+        });
 
     </script>
 </body>
